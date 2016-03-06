@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/jugaltheshah/visionapitest#readme",
   "dependencies": {
+    "dotenv": "^2.0.0",
     "google-vision-api-client": "0.0.2"
   }
 }
