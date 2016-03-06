@@ -1,9 +1,8 @@
-require('dotenv').config();
 var vision = require('google-vision-api-client');
 var requtil = vision.requtil;
 
 //Prepare your service account from trust preview certificated project
-var jsonfile = process.env.credFile; //'/path-to-your-service-account.json';
+var jsonfile = 'credFile.json';
 
 //Initialize the api
 vision.init(jsonfile);
