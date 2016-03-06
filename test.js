@@ -14,6 +14,12 @@ var d = requtil.createRequests().addRequest(
 		.withFeature('TEXT_DETECTION', 10)
 		.build());
 
+/*
+  Note that the google-vision-api-client points to the wrong url, should point to
+  'https://vision.googleapis.com/v1/images:annotate'
+  This can be changed by modifying baseurl in node_modules/google-vision-api-client/index.js
+*/
+
 //Do query to the api server
 vision.query(d, function(e, r, d){
 	if(e) console.log('ERROR:', e);
